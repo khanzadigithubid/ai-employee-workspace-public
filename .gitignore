@@ -1,0 +1,28 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+**/*token*
+**/*secret*
+**/*credential*
+**/*auth*
+**/*.pem
+**/*.key
+
+# Local state and runtime data
+**/sessions/
+**/*.jsonl
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+*.log
+logs/
+tmp/
+temp/
+.cache/
+
+# Local tooling
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
