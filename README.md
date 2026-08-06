@@ -12,6 +12,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-6366f1.svg" alt="MIT License"></a>
   <a href="https://github.com/khanzadigithubid/ai-employee-workspace-public"><img src="https://img.shields.io/badge/status-public-22c55e.svg" alt="Public repository"></a>
   <a href="https://openclaw.ai/"><img src="https://img.shields.io/badge/powered%20by-OpenClaw-38bdf8.svg" alt="Powered by OpenClaw"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-blue.svg" alt="PRs Welcome"></a>
 </p>
 
 ## Purpose
@@ -24,6 +25,8 @@ The original private workspace contains personal configuration, memory, schedule
 
 - `README.md` — project overview and public documentation
 - `assets/ai-engineering-workspace-banner.svg` — repository branding banner
+- `CONTRIBUTING.md` — guidelines for contributing
+- `CHANGELOG.md` — version release tracking
 - `.gitignore` — protection against credentials, tokens, local state, and runtime files
 - `LICENSE` — MIT License for reuse and distribution
 
@@ -40,6 +43,10 @@ The following remain in the private backup repository:
 ## Security
 
 Never commit API keys, OAuth tokens, passwords, private keys, `.env` files, session transcripts, or personal memory to a public repository. Review every file before publishing it.
+
+## Contributing
+
+Please check [CONTRIBUTING.md](CONTRIBUTING.md) before submitting pull requests.
 
 ## License
 
