@@ -27,6 +27,9 @@ The original private workspace contains personal configuration, memory, schedule
 - `assets/ai-engineering-workspace-banner.svg` — repository branding banner
 - `CONTRIBUTING.md` — guidelines for contributing
 - `CHANGELOG.md` — version release tracking
+- `automation/google_workspace_briefing.py` — read-only Google Workspace briefing workflow
+- `automation/README.md` — setup, security, and scheduling guidance
+- `automation/requirements.txt` — pinned dependency ranges
 - `.gitignore` — protection against credentials, tokens, local state, and runtime files
 - `LICENSE` — MIT License for reuse and distribution
 
@@ -36,7 +39,8 @@ The following remain in the private backup repository:
 
 - Personal profile and preferences
 - Long-term memory and daily notes
-- OAuth credentials and integration scripts
+- OAuth credentials and private token files
+- Generated briefings and personal Workspace data
 - Local schedules and runtime state
 - Private OpenClaw configuration
 
