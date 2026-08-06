@@ -1,4 +1,4 @@
-# AI Employee Workspace
+# AI Engineering Workspace
 
 A sanitized public reference workspace for an AI engineering assistant powered by OpenClaw.
 
