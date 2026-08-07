@@ -67,7 +67,9 @@ The generated file is named `briefing-YYYY-MM-DD.md`. Review generated reports b
 
 ## Scheduling
 
-Use your operating system scheduler or an approved automation platform. If using OpenClaw, keep the job read-only and schedule it in the desired timezone. Do not publish scheduler configuration, OAuth tokens, or generated reports in this public repository.
+This repository includes a GitHub Actions workflow at `.github/workflows/briefing.yml`. It runs daily at 06:00 PKT and supports manual execution through the Actions tab.
+
+For local use, you may use your operating system scheduler or an approved automation platform. Keep the job read-only and schedule it in the desired timezone. Do not publish scheduler configuration, OAuth tokens, or generated reports in this public repository.
 
 ## Troubleshooting
 

@@ -30,6 +30,7 @@ The original private workspace contains personal configuration, memory, schedule
 - `automation/google_workspace_briefing.py` — read-only Google Workspace briefing workflow
 - `automation/README.md` — setup, security, and scheduling guidance
 - `automation/requirements.txt` — pinned dependency ranges
+- `.github/workflows/briefing.yml` — scheduled GitHub Actions automation
 - `.gitignore` — protection against credentials, tokens, local state, and runtime files
 - `LICENSE` — MIT License for reuse and distribution
 
@@ -43,6 +44,30 @@ The following remain in the private backup repository:
 - Generated briefings and personal Workspace data
 - Local schedules and runtime state
 - Private OpenClaw configuration
+
+## Automated GitHub Actions Workflow
+
+The public repository includes `.github/workflows/briefing.yml`. It runs automatically every day at **06:00 AM Pakistan Standard Time (PKT)** and can also be started manually from **Actions -> Generate Public Executive Briefing -> Run workflow**.
+
+The workflow:
+
+1. Starts a clean Python 3.12 environment on GitHub-hosted Ubuntu.
+2. Installs the dependencies listed in `automation/requirements.txt`.
+3. Loads Google OAuth values from encrypted GitHub Actions Repository Secrets.
+4. Reads upcoming Calendar events, unread Gmail metadata, and recently modified Drive files using read-only scopes.
+5. Generates `briefings/briefing-YYYY-MM-DD.md`.
+6. Commits the generated report back to this repository.
+
+### Required GitHub Secrets
+
+Add these under **Settings -> Secrets and variables -> Actions -> Repository secrets**:
+
+- `GOOGLE_CLIENT_ID`
+- `GOOGLE_CLIENT_SECRET`
+- `GOOGLE_ACCESS_TOKEN`
+- `GOOGLE_REFRESH_TOKEN`
+
+The public repository contains no credentials or private reports by default. Generated briefings can contain personal Workspace data, so keep this repository private if you enable the workflow and do not want those reports publicly visible.
 
 ## Security
 
